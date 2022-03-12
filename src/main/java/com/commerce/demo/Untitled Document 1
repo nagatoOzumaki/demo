@@ -1,0 +1,55 @@
+costumer:
+	id
+	email
+	name
+	lasname
+	password
+	Adress
+	PostCode
+	phone
+Category:
+	id
+	Category_name
+	category_image
+	cat_description
+
+Product:
+	id
+	name
+	descriptin
+	image1
+	image2
+	image3
+	price
+	stock
+	Category_id primary key
+	product_id
+Order_Tbl:
+	oder_id
+	order_no
+	order date
+	oder_date
+	prder_total
+	Customer_id
+	shipping date
+	is_delivred
+Order_details:
+	order_details_id
+	product_id
+	prduct_city
+	Product_price
+	List <order_id>
+	subtotal
+ShoppingService:
+	order(Produit,Customer,quantity);
+	showOrderDetails(customer);
+	abortOrder(customer);
+	editOrder(customer);
+	showProductDetails(product);
+
+registrationService:
+	sign_up();
+	sign in();
+	logout();
+	remouveAccount();
+	
