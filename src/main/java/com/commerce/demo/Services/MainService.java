@@ -34,7 +34,8 @@ public class MainService implements UserDetailsService {
 
     @Override
     public Customer loadUserByUsername(String username) throws UsernameNotFoundException {
-        return new Customer("riad", "riad", "riad", "riad");
+        return customerRepository.findByEmail(username).get(0);
+        // Customer("riad", "riad", "riad", "riad");
     }
 
 }
