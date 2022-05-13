@@ -1,2 +1,2 @@
 # demo
-E-coomerce web App with spring boot
+E-comerce Res Api with spring boot and Mysql
